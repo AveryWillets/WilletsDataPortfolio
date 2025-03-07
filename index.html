@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avery Willets's Portfolio</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    nav {
+        text-align: center;
+        background-color: #444;
+        padding: 10px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        }
+    section {
+        margin: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .about img {
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+    }
+        /*.skills, .education {
+            display: flex;
+            flex-wrap: wrap;
+        }*/
+    .skills div, .education div {
+        display: block;
+        margin-right: 20px;
+        margin-bottom: 15px;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+    }
+        
+        /* COntainer for all projects */
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+        gap: 200px; /* Space between project ccards*/
+        padding: 20px;
+    }
+        
+    /*Project cards styling*/
+    .project-card {
+        border: 1px solid #ccc; /* Light border around each project card */
+        border-radius: 8px; /* Rounded corners */
+        overflow: hidden; /* Prevent content overflow */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+    }
+        
+    /* Add hover effect to scale the project card */
+    .project-card:hover {
+        transform: scale(1.05);
+    }
+        
+    /* Style for the preview image */
+    .project-image {
+        width: 100%; /* Make the image fill the width of the card */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensure the image covers the space without distortion */
+        transition: opacity 0.3s ease; /* Smooth fade-in effect */
+    }
+        
+    /* Change the image opacity when hovered */
+    .project-card:hover .project-image {
+        opacity: 0.8;
+    }
+        
+        /* Style for the project name */
+    .project-name {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 15px;
+        background-color: #f4f4f4; /* Light background for the name */
+        margin: 0;
+        color: #333; /* Dark text for better readability */
+        }
+        
+        /* Optional: Style for links (removes default styling) */
+        .project-card a {
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Inherit text color from parent */
+        }
+    </style>
+    
+</head>
+
+<body>
+
+<header>
+    <h1>Avery Willets</h1>
+    <p>Analysis | Data Visualization | Machine Learning</p>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#social">Social Links</a>
+</nav>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <img src="placeholder.jpg" alt="Your Photo">
+    <p>I'm an inquisitive and driven data scientist with a passion for clear communication through visualization.</p>
+</section>
+
+<section id="skills" class="skills">
+    <div>
+        <h2>Skills</h2>
+    </div>
+    <br>
+    <div>
+        <h3>Python</h3>
+        <p>Proficient with Python using various libraries.</p>
+    </div>
+    <br>
+    <div>
+        <h3>Data Cleaning</h3>
+        <p>Experience cleaning raw data, including unique delimiters and unstructured data.</p>
+    </div>
+    <br>
+    <div>
+        <h3>Data Visualization</h3>
+        <p>Create clean visualizations that effectively communicate insights with Matplotlib and Seaborn.</p>
+    </div>
+    <br>
+    <div>
+        <h3>Statistical Analysis</h3>
+        <p>Experience with descriptive statistics, probability and hypothesis testing, and regression analysis.</p>
+    </div>
+    <br>
+    <div>
+        <h3>Machine Learning</h3>
+        <p>Implement both supervised and unsupervised models, experience with hyperparameter tuning.</p>
+    </div>
+    <br>
+    <div>
+        <h3>SQL</h3>
+        <p>Experience aggregating data, joining tables, and using nested queries.</p>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <br>
+    <p>Check out some of my projects below:</p>
+    <ul>
+        <li><a href="project1.html" target="_blank">Project 1</a> - A description of your first project.</li>
+        <li><a href="project2.html" target="_blank">Project 2</a> - A description of your second project.</li>
+        
+        <div class="projects-container">
+            <div class="project-card">
+                <a href="project-link.html">
+                <img src="project1-preview.jpg" alt="Project 1 Preview" class="project-image">
+                <h3 class="project-name">Project 1</h3>
+                </a>
+            </div>
+      
+            <div class="project-card">
+                <a href="project2-link.html">
+                    <img src="project2-preview.jpg" alt="Project 2 Preview" class="project-image">
+                    <h3 class="project-name">Project 2</h3>
+                </a>
+            </div>
+  
+        <!-- Add more projects here -->
+        </div>
+    </ul>
+</section>
+
+<section id="education" class="education">
+    <h2>Education</h2>
+    <br>
+    <div>
+        <h3>Bachelor of Science (B.S.), Data Science</h3>
+        <p>University of Advancing Technology - 2025</p>
+    </div>
+    <br>
+    <div>
+        <h3>Associate of Science (A.S.), Network Engineering</h3>
+        <p>University of Advancing Technology - 2024</p>
+    </div>
+</section>
+
+<section id="social" class="social">
+    <h2>Social Links</h2>
+    <br>
+    <ul>
+        <li><a href="www.linkedin.com/in/avery-willets-555243272" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/AveryWillets" target="_blank">GitHub</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 Avery Willets. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
